@@ -5,3 +5,8 @@ class Person:
         self.accounts = []
 
     def add_account(self, account): 
+        self.accounts.append(account)
+
+    def __str__(self):
+        return f"Name = {self.name}, Number of accounts = {len(self.accounts)}"
+    
