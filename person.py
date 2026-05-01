@@ -1,6 +1,6 @@
 # person.py
 class Person: 
-    def __init__(self, name, accounts):
+    def __init__(self, name):
         self.name = name 
         self.accounts = []
 
