@@ -1,7 +1,5 @@
 from aircraft import Aircraft
 
-from aircraft import Aircraft
-
 def main():
     model = input("Enter aircraft model:\n")
     plane = Aircraft(model)
@@ -13,8 +11,6 @@ def main():
             break
 
         parts = command.split()
-
-        # Seguridad extra (evita crashes en tests)
         if len(parts) != 2:
             continue
 
@@ -22,9 +18,9 @@ def main():
         feet = int(parts[1])
 
         if action == "A":
-            plane.ascent(feet)
+            plane.climb(feet)
         elif action == "D":
-            plane.descent(feet)
+            plane.descend(feet)
 
     print(f"Final altitude: {plane.altitude} feet")
 
