@@ -47,7 +47,7 @@ def main():
             break
 
         else:
-            print("Invalid option.")
+            print("Invalid option. Please choose 1-4.")
 
 if __name__ == "__main__":
     main()
