@@ -17,9 +17,7 @@ if __name__ == "__main__":
     director = input("Enter the director's name: ")
     year = input("Enter the release year: ")
 # FREEZE CODE END
-    
-    
     # TODO: Construct a Movie object!
     # TODO: Print the object!
-my_movie = Movie(title, director, year)
-print(my_movie)
+    my_movie = Movie(title, director, year)
+    print(my_movie)
