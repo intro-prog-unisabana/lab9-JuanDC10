@@ -8,10 +8,10 @@ class Car:
         self.mileage = mileage
     def change_color(self, new_color): 
         self.color = new.color
-        return f"The car is now {self.color}."
     def drive(self, miles): 
-        miles = 0.6214
-        self.mileage = self.mileage * miles
+    self.mileage += miles
+    
     def __str__(self): 
-        return f"{self.car_id} - {self.year} {self.color} {self.brand} with {self.mileage}"
+        return f"{self.car_id} - {self.year} {self.color} {self.brand} with {self.mileage} miles"
+    
     
